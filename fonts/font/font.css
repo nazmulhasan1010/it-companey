@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'AlfaSlabOne-Regular';
+    src: url('Alfa_Slab_One/AlfaSlabOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Bebas_Neue';
+    src: url('Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('Montserrat/static/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('Montserrat/static/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('Poppins/Poppins-Bold.ttf');
+}
