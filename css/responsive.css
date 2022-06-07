@@ -1,0 +1,330 @@
+/* ------------------------------1315px-------------------------- */
+@media screen and (max-width: 1315px) {
+    .menu-list li {
+        margin: 10px 40px 0 0;
+    }
+
+}
+
+/* ------------------------------1220px-------------------------- */
+@media screen and (max-width: 1220px) {
+    .menu-list li {
+        margin: 10px 20px 0 0;
+    }
+
+}
+
+/* ------------------------------1130px-------------------------- */
+@media screen and (max-width: 1130px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+/* ------------------------------1040px-------------------------- */
+@media screen and (max-width: 1040px) {}
+
+/* ------------------------------980px-------------------------- */
+@media screen and (max-width: 980px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+/* ------------------------------768px-------------------------- */
+@media screen and (max-width: 768px) {
+    .menu-list .menu-items .fa-xmark {
+        display: block;
+        font-size: 2rem;
+        margin-left: 85%;
+    }
+
+    .menu-list .menu-items .fa-xmark:hover {
+        opacity: .8;
+    }
+
+    .menu-list .menu-items {
+        width: 0px;
+        display: none;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: -50px;
+        background-color: rgba(42, 11, 63, 0.950);
+        padding: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        z-index: 9999999;
+        overflow: scroll;
+    }
+
+    .menu-list .menu-items .nav-option-icon {
+        display: flex;
+    }
+
+    .menu-list li {
+        height: 30px;
+        align-items: center;
+        padding: 2px 5px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+
+    .option-modal {
+        display: none;
+    }
+
+    .menu-list li:hover {
+        background-color: rgba(28, 2, 46, 0.951);
+    }
+
+    .menu-list .menu-itemsActive {
+        display: block;
+        width: 50%;
+        right: 0px;
+    }
+
+    .menu-list .menu-items .contact-info {
+        display: block;
+    }
+
+
+    .menu-list .menu-items li {
+        font-size: 1.2rem;
+    }
+
+    .menu-list .menu-more-icon {
+        padding-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: right;
+        color: var(--5-white);
+        font-size: 2rem;
+    }
+
+    /* banner */
+    .animation-star,
+    .animation-ciecle,
+    .banner-ani {
+        display: none;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    .card-boundle-min {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .owl-carousel-next {
+        display: none;
+    }
+
+    .heading-text p::after {
+        left: 15%;
+    }
+
+    .skill-content .card-boundle-min .skill-mudal {
+        width: 100%;
+    }
+
+    .pricing-main-content {
+        flex-direction: column;
+    }
+
+    .pricing-main-content .card {
+        width: 350px;
+        margin: 20px 0;
+    }
+
+    .pricing-main-content .card-1 {
+        margin-right: 0px;
+    }
+
+    .pricing-main-content .card-3 {
+        margin-left: 0px;
+    }
+
+    .card,
+    .footer-card {
+        margin: 20px 0;
+    }
+
+    .contact-main-content .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-main-content .contact-content .contact-left,
+    .contact-main-content .contact-content .contact-right {
+        width: 100%;
+    }
+
+    .contact-main-content .contact-content .contact-right iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .content-5-white,
+    .content-white,
+    .overviews {
+        padding: 40px 5px 40px 40px;
+    }
+
+    .container-qualitys .qualitys {
+        width: 100%;
+    }
+
+    .top-about-card {
+        width: 100%;
+        height: 400px;
+    }
+
+    .ser-card-boundle-min .card-services {
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
+/* ------------------------------662px-------------------------- */
+@media screen and (max-width: 662px) {
+    .header {
+        padding: 0 10px;
+    }
+
+    .header-row {
+        width: 100%;
+    }
+}
+
+/* ------------------------------575px-------------------------- */
+@media screen and (max-width: 575px) {
+    .header-row {
+        display: flex;
+    }
+
+    .header-text {
+        width: 80%;
+    }
+
+    .menu-list {
+        width: 20%;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .text .company-name {
+        font-size: 1.2rem;
+    }
+
+    .title-service {
+        font-size: .8rem;
+    }
+
+    .heading-text p::after {
+        left: 10%;
+    }
+
+    .top-about-card {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* ------------------------------542px-------------------------- */
+@media screen and (max-width: 542px) {
+    .menu-list .menu-itemsActive {
+        width: 70%;
+    }
+
+    .content-5-white,
+    .content-white,
+    .overviews {
+        padding: 40px 5px 40px 20px;
+    }
+
+    .menu-list .menu-itemsActive {
+        width: 100%;
+    }
+
+    .menu-list .menu-items {
+        height: 90vh;
+    }
+
+    .top-about-card {
+        width: 90%;
+        height: 250px;
+    }
+
+    .top-about-card .card-heading-text {
+        width: 100%;
+        height: 250px;
+    }
+
+    .top-about-card .content-image {
+        display: none;
+    }
+}
+
+/* ------------------------------500px-------------------------- */
+@media screen and (max-width: 500px) {
+    .heading-text p::after {
+        left: 5%;
+    }
+}
+
+/* ------------------------------400px-------------------------- */
+@media screen and (max-width: 400px) {
+
+    .content-5-white,
+    .content-white,
+    .overviews {
+        padding: 20px 5px 20px 20px;
+    }
+
+    .pricing-main-content .card {
+        width: 300px;
+        margin: 20px 0;
+    }
+
+    .heading-text h1 {
+        font-size: 3rem;
+    }
+
+    .heading-text p::after {
+        left: 0%;
+    }
+
+    .top-about-card {
+        width: 100%;
+        height: 280px;
+    }
+
+    .top-about-card .card-heading-text {
+        width: 100%;
+        height: 280px;
+    }
+
+    .ser-card-boundle-min .card-services {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+}
+
+/* ------------------------------370px-------------------------- */
+@media screen and (max-width: 370px) {
+    .heading-text p::after {
+        left: -10%;
+    }
+}

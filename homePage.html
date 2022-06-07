@@ -11,39 +11,126 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/font/font.css">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <!-- header start -->
-    <div class="container-fluid bg-dark  d-flex align-items-center header ">
-        <div class="col-md-5 d-flex">
-            <img class="logo" src="image/logo.png" alt="logo">
-            <div class="text">
-                <p class="company-name">Example IT</p>
-                <p class="title-service">we help to the world make more easyer</p>
+    <div class="container-fluid bg-dark  d-flex align-items-center header" id="header">
+        <div class=" header-row">
+            <div class="col-md-5 col-sm-8 d-flex header-text">
+                <a href="homePage.html">
+                    <img class="logo" src="image/logo.png" alt="logo">
+                    <div class="text">
+                        <p class="company-name">Example IT</p>
+                        <p class="title-service">we help to the world make more easyer</p>
+                    </div>
+                </a>
             </div>
-        </div>
-        <ul class="col-md-7 d-flex list-unstyled justify-content-lg-end menu-list">
-            <li>Home</li>
-            <li>About</li>
-            <li id="option">Services <i class="fa-solid fa-angle-down"></i>
-                <div class="option-modal">
-                    <div class="option">web design</div>
-                    <div class="option">web development</div>
-                    <div class="option">android app design</div>
-                    <div class="option">android app development</div>
-                    <div class="option">deskto app design</div>
-                    <div class="option">ios app design</div>
+            <ul class="col-md-7 col-sm-4 list-unstyled justify-content-lg-end menu-list">
+                <div class="menu-items" id="menuItems">
+                    <i class="fa-solid fa-xmark" id="navCross"></i>
+                    <li>
+                        <a href="homePage.html">
+                            <i class="fa-solid fa-home nav-option-icon"></i>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/about.html">
+                            <i class="fa-solid fa-address-card nav-option-icon"></i>About
+                        </a>
+                    </li>
+                    <li id="option">
+                        <div class="option-link">
+                            <i class="fa-solid fa-laptop-code nav-option-icon"></i>
+                            Services
+                            <i class="fa-solid fa-angle-right" id="moreIcon"
+                                style="margin-left:10px;font-size: 1rem;"></i>
+                        </div>
+                        <div class="option-modal">
+                            <a href="pages/services.html#WebDesign">
+                                <div class="option">web design</div>
+                            </a>
+                            <a href="pages/services.html#Webdevelopment">
+                                <div class="option">web development</div>
+                            </a>
+                            <a href="pages/services.html#Mobileappdesign">
+                                <div class="option">android app design</div>
+                            </a>
+                            <a href="pages/services.html#Mobileappdevelopment">
+                                <div class="option">android app development</div>
+                            </a>
+                            <a href="pages/services.html#Softwaredesign">
+                                <div class="option">deskto app design</div>
+                            </a>
+                            <a href="pages/services.html#Graphicsdesign">
+                                <div class="option">ios app design</div>
+                            </a>
+                        </div>
+                        <div class="option-modal-res">
+                            <a href="pages/services.html#WebDesign">
+                                <div class="option">
+                                    <i class="fa-solid fa-code nav-option-icon"></i>web design
+                                </div>
+                            </a>
+                            <a href="pages/services.html#Webdevelopment">
+                                <div class="option">
+                                    <i class="fa-solid fa-database nav-option-icon"></i>web development
+                                </div>
+                            </a>
+                            <a href="pages/services.html#Mobileappdesign">
+                                <div class="option">
+                                    <i class="fa-brands fa-android nav-option-icon"></i>android app design
+                                </div>
+                            </a>
+                            <a href="pages/services.html#Mobileappdevelopment">
+                                <div class="option"><i class="fa-solid fa-mobile-screen nav-option-icon"></i>android
+                                    development
+                                </div>
+                            </a>
+                            <a href="pages/services.html#Softwaredesign">
+                                <div class="option"><i class="fa-solid fa-display nav-option-icon"></i>deskto app design
+                                </div>
+                            </a>
+                            <a href="pages/services.html#Graphicsdesign">
+                                <div class="option">
+                                    <i class="fa-brands fa-apple nav-option-icon"></i>ios app design
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="pages/portfolio.html">
+                            <i class="fa-solid fa-code nav-option-icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/pricing.html">
+                            <i class="fa-solid fa-hand-holding-dollar nav-option-icon"></i>Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/contact.html">
+                            <i class="fa-solid fa-address-book nav-option-icon"></i>Contact
+                        </a>
+                    </li>
+                    <div class="contact-info">
+                        <hr>
+                        <h4>Contact Info</h4>
+                        <p><i class="fa-solid fa-phone"></i>+88016777-67645</p>
+                        <p><i class="fa-solid fa-envelope"></i>exampleit@gmail.com</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Gazipur,Dhaka</p>
+                    </div>
                 </div>
-            </li>
-            <li>Portfolio</li>
-            <li>Pricing</li>
-            <li>Contact</li>
-        </ul>
+                <div class="menu-more-icon">
+                    <i class="fa-solid fa-bars" id="menuMoreIconBar"></i>
+                </div>
+            </ul>
+        </div>
     </div><!-- header end -->
 
     <!-- banner start -->
-    <div class="container-fluid banner">
+    <div class="container-fluid banner" id="banner">
         <div class="row banner-row">
             <!-- animation-star -->
             <div class="animation-star str-1"></div>
@@ -57,15 +144,13 @@
             </div>
             <!-- !!animation-star -->
 
-            <div class="col-md-6 banner-text">
+            <div class="col-md-16 banner-text">
                 <h1>example it</h1>
                 <p class="title-service simp-c">we help to the world make more easyer</p>
                 <button class="hire-btn" type="button">Hire Us</button>
             </div>
             <div class="col-md-6 banner-ani">
-                <div class="animation-ciecle">
-
-                </div>
+                <div class="animation-ciecle"></div>
                 <img class="banner-animation" src="image/banneranimation.png" alt="">
             </div>
         </div>
@@ -78,11 +163,10 @@
             <p>We offer you a lower or the best price based on our price strategies.
             </p>
         </div>
-        <div class="content-body">
+        <div class="content-body main-content-d-f-100">
             <div class="owl-carousel-next">
                 <div class="customPrevBtn owl-prev"><i class="fa-solid fa-angle-left"></i></div>
             </div>
-
             <div class="card-boundle-min">
                 <div class="owl-carousel-for-about owl-carousel owl-theme">
                     <div class="item">
@@ -163,7 +247,7 @@
             <p>We always ensure the quality of our services. We want to be the last company you ever used.
             </p>
         </div>
-        <div class="services-content">
+        <div class="services-content main-content-d-f-100">
             <div class="owl-carousel-next">
                 <div class="customPrevBtn owl-prev"><i class="fa-solid fa-angle-left"></i></div>
             </div>
@@ -218,12 +302,8 @@
                                 <img src="image/icons/user-interface-1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Mobile app development</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and
-                                        make up
-                                        the
-                                        bulk of
-                                        the card's
-                                        content.</p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
                                     <a href="#" class="hire-btn more-btn" type="button">read more</a>
                                 </div>
                             </div>
@@ -252,8 +332,7 @@
                                 <img src="image/icons/programming.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Software development</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and
-                                        make up
+                                    <p class="card-text">Some quick example text to build on the card title
                                         the
                                         bulk of
                                         the card's
@@ -330,9 +409,9 @@
             <p>People Choose us for the given Qualities
             </p>
         </div>
-        <div class="container-qualitys">
+        <div class="container-qualitys main-content-d-f-100">
             <div class="row qualitys">
-                <div class="col-md-4 qualitys-card-main">
+                <div class="col-md-4 col-sm-12 qualitys-card-main">
                     <div class="card">
                         <img src="image/icons/png/001-conversation.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -342,7 +421,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 qualitys-card-main">
+                <div class="col-md-4 col-sm-12 qualitys-card-main">
                     <div class="card">
                         <img src="image/icons/png/005-problem-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -353,7 +432,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 qualitys-card-main">
+                <div class="col-md-4 col-sm-12 qualitys-card-main">
                     <div class="card">
                         <img src="image/icons/png/008-commitment.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -363,7 +442,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 qualitys-card-main">
+                <div class="col-md-4 col-sm-12 qualitys-card-main">
                     <div class="card">
                         <img src="image/icons/png/014-price-tag.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -373,7 +452,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 qualitys-card-main">
+                <div class="col-md-4 col-sm-12 qualitys-card-main">
                     <div class="card">
                         <img src="image/icons/png/017-cyber-security.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -383,7 +462,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 qualitys-card-main">
+                <div class="col-md-4 col-sm-12 qualitys-card-main">
                     <div class="card">
                         <img src="image/icons/png/021-technical-support-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -405,7 +484,7 @@
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
             </p>
         </div>
-        <div class="pricing-main-content">
+        <div class="pricing-main-content main-content-d-f-100">
             <div class="card card-1">
                 <div class="card-top">
                     <p>$15</p>
@@ -416,15 +495,15 @@
                     <div class="circle-2"></div>
                     <div class="status">basic</div>
                     <div class="info">
-                        <p><i class="fas fa-times"></i>Lorem ipsum sit they</p>
-                        <p><i class="fas fa-times"></i>Lorem ipsum sit special</p>
-                        <p><i class="fas fa-times"></i>Lorem ipsum sit common</p>
-                        <p><i class="fas fa-check"></i>Lorem ipsum sit us</p>
+                        <p><i class="fas fa-times"></i>Well-commented code</p>
+                        <p><i class="fas fa-times"></i>IonIcons integrated</p>
+                        <p><i class="fas fa-times"></i>Free Google Font integrated</p>
+                        <p><i class="fas fa-check"></i>Responsive design</p>
                     </div>
                     <button type="button">choose</button>
                 </div>
             </div>
-            <div class="card card-2 card-active">
+            <div class="card card-2">
                 <div class="card-top">
                     <p>$30</p>
                     <p>per month</p>
@@ -434,10 +513,10 @@
                     <div class="circle-2"></div>
                     <div class="status">Premium</div>
                     <div class="info">
-                        <p><i class="fas fa-times"></i>Lorem ipsum sit they</p>
-                        <p><i class="fas fa-times"></i>Lorem ipsum sit special</p>
-                        <p><i class="fas fa-check"></i>Lorem ipsum sit common</p>
-                        <p><i class="fas fa-check"></i>Lorem ipsum sit us</p>
+                        <p><i class="fas fa-times"></i>Well-commented code</p>
+                        <p><i class="fas fa-times"></i>IonIcons integrated</p>
+                        <p><i class="fas fa-check"></i>Free Google Font integrated</p>
+                        <p><i class="fas fa-check"></i>Responsive design</p>
                     </div>
                     <button type="button">choose</button>
                 </div>
@@ -452,10 +531,10 @@
                     <div class="circle-2"></div>
                     <div class="status">ultimate</div>
                     <div class="info">
-                        <p><i class="fas fa-check"></i>Lorem ipsum sit they</p>
-                        <p><i class="fas fa-check"></i>Lorem ipsum sit special</p>
-                        <p><i class="fas fa-check"></i>Lorem ipsum sit common</p>
-                        <p><i class="fas fa-check"></i>Lorem ipsum sit us</p>
+                        <p><i class="fas fa-check"></i>Well-commented code</p>
+                        <p><i class="fas fa-check"></i>IonIcons integrated</p>
+                        <p><i class="fas fa-check"></i>Free Google Font integrated</p>
+                        <p><i class="fas fa-check"></i>Responsive design</p>
                     </div>
                     <button type="button">choose</button>
                 </div>
@@ -463,6 +542,582 @@
         </div>
     </div><!-- pricing end-->
 
+    <!-- skills -->
+    <div class="container-fluid content-5-white">
+        <div class="heading-text">
+            <h1>our skills</h1>
+            <p>We listen to your business problem & offer several strategies to resolve the ROOT of the problem and
+                achieve your
+                objectives.
+            </p>
+        </div>
+        <div class="main-content-d-f-100 skill-content">
+            <div class="card-boundle-min">
+                <div class="skill-mudal card-body">
+                    <h5 class="headding-upper-bolder">Front End Skills</h5>
+                    <div class="skill-bundle">
+                        <h5 class="card-title">HTML 5</h5>
+                        <div class="skill-bar">
+                            <div class="skill-indicator">90%</div>
+                            <div class="skill-indicator-pointer"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bundle">
+                        <h5 class="card-title">CSS 3</h5>
+                        <div class="skill-bar">
+                            <div class="skill-indicator">95%</div>
+                            <div class="skill-indicator-pointer"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bundle">
+                        <h5 class="card-title">JavaScript</h5>
+                        <div class="skill-bar">
+                            <div class="skill-indicator">55%</div>
+                            <div class="skill-indicator-pointer"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bundle">
+                        <h5 class="card-title">jQuery</h5>
+                        <div class="skill-bar">
+                            <div class="skill-indicator">90%</div>
+                            <div class="skill-indicator-pointer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-mudal card-body">
+                    <h5 class="headding-upper-bolder">Back End Skills</h5>
+                    <div class="skill-bundle">
+                        <h5 class="card-title">PHP</h5>
+                        <div class="skill-bar">
+                            <div class="skill-indicator">90%</div>
+                            <div class="skill-indicator-pointer"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bundle">
+                        <h5 class="card-title">Laravel</h5>
+                        <div class="skill-bar">
+                            <div class="skill-indicator">85%</div>
+                            <div class="skill-indicator-pointer"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bundle">
+                        <h5 class="card-title">React</h5>
+                        <div class="skill-bar">
+                            <div class="skill-indicator">80%</div>
+                            <div class="skill-indicator-pointer"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bundle">
+                        <h5 class="card-title">Python</h5>
+                        <div class="skill-bar">
+                            <div class="skill-indicator">90%</div>
+                            <div class="skill-indicator-pointer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- skills end -->
+
+    <!-- portfolio -->
+    <div class="container-fluid content-white">
+        <div class="heading-text">
+            <h1>our porifolio</h1>
+            <p>We always ensure the quality of our services. We want to be the last company you ever used.
+            </p>
+        </div>
+        <div class="container-qualitys porifolio-main-content main-content-d-f-100">
+            <div class="row qualitys">
+                <div class="col-md-4 col-sm-12 portfolio-card">
+                    <div class="card">
+                        <img src="image/portfolio-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">web design</h5>
+                            <p class="card-text">multy page responsive web site deign</p>
+                        </div>
+                        <div class="options-more-portfolio">
+                            <div class="icons-protfolio-more">
+                                <a href="http://" class="swipe-left"><i class="fa-solid fa-eye"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-card">
+                    <div class="card">
+                        <img src="image/portfolio-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">web development</h5>
+                            <p class="card-text">Commercial web site design and development</p>
+                        </div>
+                        <div class="options-more-portfolio">
+                            <div class="icons-protfolio-more">
+                                <a href="http://" class="swipe-left"><i class="fa-solid fa-eye"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-card">
+                    <div class="card">
+                        <img src="image/portfolio-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">app design</h5>
+                            <p class="card-text">android apps design</p>
+                        </div>
+                        <div class="options-more-portfolio">
+                            <div class="icons-protfolio-more">
+                                <a href="http://" class="swipe-left"><i class="fa-solid fa-eye"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-card">
+                    <div class="card">
+                        <img src="image/portfolio-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">software design</h5>
+                            <p class="card-text">computer software design</p>
+                        </div>
+                        <div class="options-more-portfolio">
+                            <div class="icons-protfolio-more">
+                                <a href="http://" class="swipe-left"><i class="fa-solid fa-eye"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-card">
+                    <div class="card">
+                        <img src="image/portfolio-5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">graphics design</h5>
+                            <p class="card-text">company logo and vector grapgics design</p>
+                        </div>
+                        <div class="options-more-portfolio">
+                            <div class="icons-protfolio-more">
+                                <a href="http://" class="swipe-left"><i class="fa-solid fa-eye"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-card">
+                    <div class="card">
+                        <img src="image/portfolio-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">digital marketing</h5>
+                            <p class="card-text">facebook , youtube marketing</p>
+                        </div>
+                        <div class="options-more-portfolio">
+                            <div class="icons-protfolio-more">
+                                <a href="http://" class="swipe-left"><i class="fa-solid fa-eye"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- porifolio end -->
+
+    <!-- teams -->
+    <div class="container-fluid content-5-white">
+        <div class="heading-text">
+            <h1>our teams</h1>
+            <p>Our Tech Support Team is friendly, fast & Knowledgeable. We here to help you & strive to provide the best
+                customer
+                service possible.
+            </p>
+        </div>
+        <div class="teams-main-content main-content-d-f-100 container-qualitys ">
+            <div class="row qualitys">
+                <div class="col-md-3 team-card">
+                    <div class="card">
+                        <img src="image/team-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">harddy shando</h5>
+                            <p class="card-text">web designder</p>
+                        </div>
+                        <div class="options-more-team">
+                            <div class="icons-team-more">
+                                <a href="http://" class="swipe-left"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 team-card">
+                    <div class="card">
+                        <img src="image/team-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">alina jafrin</h5>
+                            <p class="card-text">web developer</p>
+                        </div>
+                        <div class="options-more-team">
+                            <div class="icons-team-more">
+                                <a href="http://" class="swipe-left"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 team-card">
+                    <div class="card">
+                        <img src="image/team-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">luka manish</h5>
+                            <p class="card-text">app designer</p>
+                        </div>
+                        <div class="options-more-team">
+                            <div class="icons-team-more">
+                                <a href="http://" class="swipe-left"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 team-card">
+                    <div class="card">
+                        <img src="image/team-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">jenifer anjum</h5>
+                            <p class="card-text">software developer</p>
+                        </div>
+                        <div class="options-more-team">
+                            <div class="icons-team-more">
+                                <a href="http://" class="swipe-left"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- teams end -->
+
+    <!-- overview  -->
+    <div class="container-fluid bg-black overviews" id="overviews">
+        <div class="overviews-main-content main-content-d-f-100 container-qualitys">
+            <div class="row qualitys">
+                <div class="col-md-3 over-view-card">
+                    <div class="card">
+                        <img src="image/icons/png/010-teamwork-1.png" alt="" srcset="">
+                        <h1 data-endVal="90" class="over-view-count-value"></h1>
+                        <p>our stafs</p>
+                    </div>
+                </div>
+                <div class="col-md-3 over-view-card">
+                    <div class="card">
+                        <img src="image/icons/target.png" alt="" srcset="">
+                        <h1 data-endVal="170" class="over-view-count-value"></h1>
+                        <p>our clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3 over-view-card">
+                    <div class="card">
+                        <img src="image/icons/check.png" alt="" srcset="">
+                        <h1 data-endVal="300" class="over-view-count-value"></h1>
+                        <p>complete project</p>
+                    </div>
+                </div>
+                <div class="col-md-3 over-view-card">
+                    <div class="card">
+                        <img src="image/icons/wall-clock.png" alt="" srcset="">
+                        <h1 data-endVal="150" class="over-view-count-value"></h1>
+                        <p>pending project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- overview end -->
+
+    <!-- reviews -->
+    <div class="container-fluid content-white">
+        <div class="heading-text">
+            <h1>client reviews</h1>
+            <p>We listen to your business problem & offer several strategies to resolve the ROOT of the problem and
+                achieve your
+                objectives.
+            </p>
+        </div>
+        <div class="reviews-main-content main-content-d-f-100 container-qualitys">
+            <div class="qualitys">
+                <div class="owl-carousel-for-reviews owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card review-card">
+                            <img src="image/testimonial-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Luka Manish</h4>
+                                <h6>Businessmen</h6>
+                                <p class="card-text">
+                                    " At Hi Tech IT, we follow & enforce "Security Best Practices" for all our clients,
+                                    as well as internally."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card review-card">
+                            <img src="image/testimonial-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Mariya Sijan</h4>
+                                <h6>It person</h6>
+                                <p class="card-text">
+                                    At Hi Tech IT, we follow & enforce "Security Best Practices" for all our clients, as
+                                    well as internally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card review-card">
+                            <img src="image/testimonial-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Sandaya sani</h4>
+                                <h6>It person</h6>
+                                <p class="card-text">
+                                    At Hi Tech IT, we follow & enforce "Security Best Practices" for all our clients, as
+                                    well as internally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card review-card">
+                            <img src="image/testimonial-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Abrar Ashraf</h4>
+                                <h6>Youtuber</h6>
+                                <p class="card-text">
+                                    At Hi Tech IT, we follow & enforce "Security Best Practices" for all our clients, as
+                                    well as internally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card review-card">
+                            <img src="image/testimonial-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Kashfak Hasim</h4>
+                                <h6>It person</h6>
+                                <p class="card-text">
+                                    At Hi Tech IT, we follow & enforce "Security Best Practices" for all our clients, as
+                                    well as internally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card review-card">
+                            <img src="image/team-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Kazi Al-Amin</h4>
+                                <h6>It person</h6>
+                                <p class="card-text">
+                                    At Hi Tech IT, we follow & enforce "Security Best Practices" for all our clients, as
+                                    well as internally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- reviews end -->
+
+    <!-- clients -->
+    <div class="container-fluid content-5-white">
+        <div class="heading-text">
+            <h1>our client </h1>
+            <p>We listen to your business problem & offer several strategies to resolve the ROOT of the problem and
+                achieve your
+                objectives.
+            </p>
+        </div>
+        <div class="container-qualitys main-content-d-f-100">
+            <div class="row qualitys">
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/cli-1.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/cli-2.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/cli-3.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/client-4.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/cli-4.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/client-3.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/cli-5.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/client-2.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/cli-6.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/client-1.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/cli-7.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-2 clients-card-main">
+                    <div class="card">
+                        <img src="image/client-5.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- clients end -->
+
+    <!-- contact -->
+    <div class="container-fluid content-white">
+        <div class="heading-text">
+            <h1>contact with us</h1>
+            <p>We listen to your business problem & offer several strategies to resolve the ROOT of the problem and
+                achieve your
+                objectives.
+            </p>
+        </div>
+        <div class="contact-main-content main-content-d-f-100 container-qualitys">
+            <div class="card-boundle-min contact-content">
+                <div class="contact-left ">
+                    <form class="row g-3 " novalidate>
+                        <div class="col-md-6">
+                            <label for="name" class="form-label card-title">Your name</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your name"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label card-title">Your email</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="subject" class="form-label card-title">Subject</label>
+                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="message" class="form-label card-title">Message</label>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="7"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="hire-btn more-btn" type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113490.66005287025!2d90.36398225758677!3d23.800604987758017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1653037539650!5m2!1sen!2sbd"
+                        width="600" height="440" style="border:0; border-radius: 10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div><!-- contact end-->
+
+    <!-- footer -->
+    <div class="container-fluid content-5-white bg-dark footer">
+        <div class="footer-main-content container-qualitys main-content-d-f-100">
+            <div class="qualitys">
+                <div class="row">
+                    <div class="col-md-3 footer-card">
+                        <div class="card-title">about us</div>
+                        <ul>
+                            <li><a href="#banner"><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                            <li><a href="pages/about.html"> <i class="fa-solid fa-angle-right"></i>About us</a></li>
+                            <li><a href="pages/services.html"> <i class="fa-solid fa-angle-right"></i>Our services</a>
+                            </li>
+                            <li><a href="pages/terms.html"> <i class="fa-solid fa-angle-right"></i>Terms & condition</a>
+                            </li>
+                            <li><a href="pages/privacy.html"><i class="fa-solid fa-angle-right"></i>Privacy policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-card">
+                        <div class="card-title">useful links</div>
+                        <ul>
+                            <li><a href="http://"><i class="fa-solid fa-angle-right"></i>Open It</a></li>
+                            <li><a href="http://"> <i class="fa-solid fa-angle-right"></i>Basis</a></li>
+                            <li><a href="http://"> <i class="fa-solid fa-angle-right"></i>Creative It</a></li>
+                            <li><a href="http://"> <i class="fa-solid fa-angle-right"></i>IT Bd</a></li>
+                            <li><a href="http://"><i class="fa-solid fa-angle-right"></i>Banglatronics</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 contact-footer footer-card">
+                        <div class="card-title">contact us</div>
+                        <p>1300 Center Avenue</p>
+                        <p>Gazipur,Dhaka</p>
+                        <p>Bangladesh</p>
+                        <p>Phone: 016xxxx-xxxx</p>
+                        <p>Email: exampleit@gmail.com</p>
+                        <div class="options-more-team footer-more-option">
+                            <div class="icons-team-more">
+                                <a href="http://" class="swipe-left"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="http://" class="swipe-right"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer-card">
+                        <div class="card-title">subscription</div>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                        <div class="subscription-con">
+                            <input type="email" name="sub-email" id="subEmail" placeholder="Email">
+                            <button type="button">subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy; 2022 example it. All Rights Reserved</p>
+    </div><!-- footer end -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>

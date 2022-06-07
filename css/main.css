@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+img {
+    opacity: 0.9;
+}
+
 body {
     color: #757575;
     font-family: "Raleway", sans-serif;
@@ -22,12 +26,12 @@ body {
 
 .content-5-white {
     background-color: var(--5-white);
-    padding: 60px 0;
+    padding: 60px;
 }
 
 .content-white {
     background-color: #fff;
-    padding: 60px 0;
+    padding: 60px;
 }
 
 .hire-btn {
@@ -113,9 +117,26 @@ body {
     -o-border-radius: 0 0 10px 10px;
 }
 
-.card-body .card-title {
+.card-title {
     font-family: "Montserrat-Regular";
     font-weight: bold;
+}
+
+.headding-upper-bolder {
+    text-transform: uppercase;
+    color: var(--h1-color);
+    font-size: 2rem;
+    z-index: 1;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.main-content-d-f-100 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-boundle-min {
@@ -131,12 +152,29 @@ body {
     height: 80px;
     padding: 0 50px;
     color: var(--white-primary);
+    z-index: 99999999;
+}
+
+.headerSticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header .header-row {
+    width: 100%;
+    display: flex;
 }
 
 .logo {
     height: 60px;
 }
-
+.header-text a {
+    display: flex;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
 .text {
     margin-left: 20px;
     height: 60px;
@@ -149,6 +187,83 @@ body {
     font-size: 1.5rem;
     margin: 0px;
     font-family: "Montserrat-Bold";
+    color: var(--5-white);
+}
+
+.menu-list .menu-items .contact-info {
+    font-family: "Montserrat-Regular";
+    display: none;
+}
+
+.menu-list .menu-items .contact-info h4 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.menu-list .menu-items .contact-info p {
+    font-size: 1.2rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.menu-list .menu-items .contact-info p .fa-solid {
+    width: 30px;
+}
+
+.menu-list .menu-items .fa-xmark {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-list .menu-items .nav-option-icon {
+    font-size: 1.2rem;
+    width: 30px;
+    display: none;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.option-link {
+    display: flex;
+    align-items: center;
+}
+
+.option-modal-res {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 0 0 0 10px;
+}
+
+.option-modal-res .option {
+    letter-spacing: 1px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#moreIcon {
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.menu-list .menu-items .fa-xmark:hover {
+    opacity: 0.8;
+}
+
+.menu-list .menu-items {
+    display: flex;
+}
+
+.menu-list .menu-more-icon {
+    display: none;
 }
 
 .title-service {
@@ -167,19 +282,27 @@ body {
     font-size: 1rem;
     text-transform: uppercase;
     font-family: "Montserrat-Regular";
+    display: flex;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: var(--5-white);
+    display: flex;
 }
 
 .menu-list li:nth-last-child(1) {
     margin: 10px 0px 0 0;
 }
 
-.menu-list li:hover,
+.menu-list li a:hover,
 .menu-list li select:hover {
     color: var(--color-secondary);
 }
 
 #option {
     position: relative;
+    display: block;
 }
 
 .fa-angle-down {
@@ -210,6 +333,13 @@ body {
     -o-transition: 5s;
 }
 
+.option-modal a,
+.option-modal-res a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
 .option-modal::before {
     content: "";
     position: absolute;
@@ -230,6 +360,11 @@ body {
 .option {
     margin-top: px;
     padding: 2px 10px;
+    color: #333;
+}
+
+.option-modal-res .option {
+    color: var(--5-white);
 }
 
 .option:hover {
@@ -255,6 +390,27 @@ body {
     overflow: hidden;
 }
 
+.com-banner {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left,
+            rgba(48, 70, 156, 0.501),
+            rgba(217, 30, 142, 0.507)),
+        url(../image/banner-bg.jpg);
+    background-position: center left;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.com-banner .title-service {
+    width: 40%;
+    margin: 0 auto;
+    font-family: 'Montserrat-Regular';
+}
+
 .banner-row {
     width: 100%;
     position: relative;
@@ -268,7 +424,24 @@ body {
     width: 50%;
 }
 
+.com-banner-text {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
 .banner-text h1 {
+    font-size: 3.1rem;
+    font-family: "Montserrat-Bold";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #309ed8;
+}
+
+.com-banner-text h1 {
     font-size: 3.1rem;
     font-family: "Montserrat-Bold";
     letter-spacing: 1px;
@@ -449,12 +622,6 @@ body {
 /*------------------------ banner end ------------------------*/
 
 /*------------------------ about ------------------------*/
-.content-body {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-}
-
 .card-boundle-card {
     width: 100%;
     display: flex;
@@ -476,6 +643,10 @@ body {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     background-color: var(--white-primary);
+    background-image: url(../image/card-bg-2.png);
+    background-blend-mode: hue;
+    background-position: center center;
+    background-size: cover;
 }
 
 .content-image,
@@ -500,14 +671,6 @@ body {
 /*------------------------ about end ------------------------*/
 
 /*------------------------ services------------------------*/
-
-.services-content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .owl-carousel-next {
     width: 15%;
     display: flex;
@@ -539,6 +702,10 @@ body {
 .services-content .card-boundle-min .card-services .card {
     background-color: var(--5-white);
     margin-bottom: 20px;
+    background-image: url(../image/card-bg-3.png);
+    background-blend-mode: color-dodge;
+    background-position: center center;
+    background-size: cover;
 }
 
 .services-content .card-boundle-min .card-services .card:hover .card-img-top {
@@ -569,12 +736,6 @@ body {
 
 /*------------------------ qualitys  ------------------------*/
 
-.container-qualitys {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
 .container-qualitys .qualitys {
     width: 90%;
 }
@@ -601,6 +762,10 @@ body {
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
+    background-image: url(../image/card-bg-1.png);
+    background-blend-mode: hue;
+    background-position: center center;
+    background-size: cover;
 }
 
 .container-qualitys .qualitys .qualitys-card-main .card:hover {
@@ -622,12 +787,9 @@ body {
 
 /*------------------------ pricing ------------------------*/
 .pricing-main-content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: "Montserrat-Regular";
     position: relative;
+    margin: 20px 0 50px 0;
 }
 
 .pricing-main-content .card {
@@ -763,13 +925,12 @@ body {
     color: #fff;
     font-size: 2rem;
     z-index: 1;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: bold;
     letter-spacing: 1.5px;
 }
 
 .pricing-main-content .card .card-bottom .info {
-    margin-bottom: 10px;
     z-index: 2;
 }
 
@@ -778,9 +939,36 @@ body {
     width: 20px;
 }
 
+.pricing-main-content .card .card-bottom .info p .fa-times,
+.pricing-main-content .card .card-bottom .info p .fa-check {
+    height: 20px;
+    width: 20px;
+    background-color: var(--5-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.pricing-main-content .card .card-bottom .info p .fa-times {
+    color: rgb(173, 15, 15);
+}
+
+.pricing-main-content .card .card-bottom .info p .fa-check {
+    color: #1b9c42;
+}
+
 .pricing-main-content .card .card-bottom .info p {
     font-size: 1rem;
     color: #fff;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .pricing-main-content .card .card-bottom button {
@@ -792,6 +980,7 @@ body {
     font-weight: bold;
     font-size: 12px;
     z-index: 3;
+    margin-top: 30px;
 }
 
 .pricing-main-content .card-1 .card-bottom button {
@@ -842,3 +1031,557 @@ body {
 }
 
 /*------------------------ pricing end ------------------------*/
+
+/*------------------------ skill  ------------------------*/
+.skill-content .card-boundle-min .skill-mudal {
+    width: 50%;
+}
+
+.skill-content .card-boundle-min .skill-mudal .skill-bundle {
+    margin-bottom: 20px;
+}
+
+.skill-content .card-boundle-min .skill-mudal .skill-bundle .skill-bar {
+    height: 15px;
+    width: 95%;
+    background-color: var(--h1-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.skill-content .card-boundle-min .skill-mudal .skill-bundle .skill-bar .skill-indicator {
+    height: 15px;
+    height: 35px;
+    width: 35px;
+    background-color: #4f84c4;
+    margin: -10px 0 0 -30px;
+    z-index: 999;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: var(--5-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat-Regular";
+    font-size: 0.8rem;
+}
+
+.skill-content .card-boundle-min .skill-mudal .skill-bundle .skill-bar .skill-indicator-pointer {
+    height: 15px;
+    background-color: var(--simple-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/*------------------------ skill end ------------------------*/
+
+/*------------------------ porifolio  ------------------------*/
+.porifolio-main-content .qualitys .portfolio-card .card {
+    margin-bottom: 20px;
+    background-color: var(--5-white);
+    box-shadow: 3px 4px 10px rgba(51, 51, 51, 0.322);
+    position: relative;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    overflow: hidden;
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .card-img-top {
+    height: 300px;
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .card-body {
+    height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .card-body .card-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .card-body .card-text {
+    text-transform: capitalize;
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .options-more-portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .options-more-portfolio .icons-protfolio-more a {
+    text-decoration: none;
+    color: var(--simple-color);
+    font-size: 1.6rem;
+    padding: 0px 10px;
+    margin: 2px;
+    background-color: #fff;
+    border: 1px solid var(--simple-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .options-more-portfolio .icons-protfolio-more {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25%;
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .options-more-portfolio .icons-protfolio-more .swipe-left {
+    animation: eye-left 0.2s linear forwards;
+    opacity: 0;
+    -webkit-animation: eye-left 0.2s linear forwards;
+    transform: translateX(-480%);
+    -webkit-transform: translateX(-480%);
+    -moz-transform: translateX(-480%);
+    -ms-transform: translateX(-480%);
+    -o-transform: translateX(-480%);
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .options-more-portfolio .icons-protfolio-more .swipe-right {
+    animation: more-right 0.2s linear forwards;
+    opacity: 0;
+    -webkit-animation: more-right 0.2s linear forwards;
+    transform: translateX(520%);
+    -webkit-transform: translateX(520%);
+    -moz-transform: translateX(520%);
+    -ms-transform: translateX(520%);
+    -o-transform: translateX(520%);
+}
+
+@keyframes eye-left {
+    100% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes more-right {
+    100% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card .options-more-portfolio a:hover {
+    background-color: #1161c3;
+    color: var(--5-white);
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.porifolio-main-content .qualitys .portfolio-card .card:hover .options-more-portfolio {
+    display: flex;
+}
+
+/*------------------------ porifolio end ------------------------*/
+
+/*------------------------ team ------------------------*/
+.team-card .card .card-body .card-title,
+.team-card .card .card-body .card-text {
+    text-transform: capitalize;
+}
+
+.team-card .card .options-more-team {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.team-card .card .options-more-team .icons-team-more {
+    animation: swipe-down 0.2s linear forwards;
+    opacity: 0;
+    -webkit-animation: swipe-down 0.2s linear forwards;
+    transform: translateY(-600%);
+    -webkit-transform: translateY(-500%);
+    -moz-transform: translateY(-500%);
+    -ms-transform: translateY(-500%);
+    -o-transform: translateY(-500%);
+    margin-top: -25%;
+}
+
+@keyframes swipe-down {
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }
+}
+
+.options-more-team .icons-team-more a {
+    text-decoration: none;
+    color: var(--simple-color);
+    font-size: 1.6rem;
+    padding: 2px 10px;
+    margin: 2px;
+    background-color: #fff;
+    border: 1px solid var(--simple-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.options-more-team .icons-team-more a:hover {
+    background-color: #1161c3;
+    color: var(--5-white);
+}
+
+.team-card .card:hover .options-more-team {
+    display: flex;
+}
+
+/*------------------------ team end ------------------------*/
+/*------------------------ reviews  ------------------------*/
+.review-card {
+    background-color: var(--5-white);
+}
+
+.review-card .card-body {
+    text-align: center;
+}
+
+.review-card .card-body h4 {
+    text-transform: capitalize;
+}
+
+.review-card .card-body h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Poppins-Regular";
+    letter-spacing: 2px;
+}
+
+.review-card .card-body .card-text {
+    font-style: italic;
+}
+
+/*------------------------ reviews end ------------------------*/
+
+/*------------------------ contact ------------------------*/
+.contact-main-content .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-main-content .contact-content .contact-left,
+.contact-main-content .contact-content .contact-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--5-white);
+    padding: 40px;
+}
+
+.contact-main-content .contact-content .contact-left form .form-control {
+    background: none;
+    border: 1px solid var(--simple-color);
+}
+
+/*------------------------ contact end ------------------------*/
+/*------------------------ footer  ------------------------*/
+.footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 -40px 0;
+    font-family: "Montserrat-Regular", "Poppins-Regular";
+}
+
+.footer-main-content {
+    color: var(--5-white);
+    font-family: "Montserrat-Regular", "Poppins-Regular";
+}
+
+.footer-main-content .qualitys .row .card-title {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.footer-main-content .qualitys .row .card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 70px;
+    background-color: var(--h1-color);
+}
+
+.footer-main-content .qualitys .row ul {
+    list-style: none;
+}
+
+.footer-main-content .qualitys .row ul li {
+    margin: 5px 0 5px -30px;
+}
+
+.footer-main-content .qualitys .row ul li {
+    margin: 5px 0 5px -30px;
+    border-bottom: 1px solid var(--h1-color);
+    padding: 6px 6px 6px 0;
+}
+
+.footer-main-content .qualitys .row ul li a {
+    text-decoration: none;
+    color: var(--5-white);
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.footer-main-content .qualitys .row .contact-footer p {
+    margin-top: -6px;
+}
+
+.footer-main-content .qualitys .row .subscription-con {
+    margin-top: 15px;
+    display: flex;
+}
+
+.subscription-con input {
+    padding: 5px 15px;
+    border: 1px solid var(--white-primary);
+    outline: none;
+    width: 60%;
+}
+
+.subscription-con button {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--simple-color);
+    color: var(--5-white);
+    border: 1px solid var(--white-primary);
+    outline: none;
+    width: 40%;
+}
+
+.subscription-con button:hover {
+    color: var(--color-secondary);
+}
+
+.footer-main-content .qualitys .row ul li a:hover {
+    color: var(--color-secondary);
+}
+
+.footer-main-content .qualitys .row ul li a .fa-angle-right {
+    margin-right: 10px;
+}
+
+.footer-main-content .qualitys .row .contact-footer .footer-more-option {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/*------------------------ footer end ------------------------*/
+
+/*------------------------ clients ------------------------*/
+.container-qualitys .qualitys .clients-card-main {
+    display: flex;
+    justify-content: center;
+}
+
+.container-qualitys .qualitys .clients-card-main .card {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container-qualitys .qualitys .clients-card-main .card img {
+    width: 100%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.container-qualitys .qualitys .clients-card-main .card:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*------------------------ clients end ------------------------*/
+
+/*------------------------ overview ------------------------*/
+.overviews {
+    padding: 100px 0;
+}
+
+.overviews-main-content .qualitys .over-view-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overviews-main-content .qualitys .over-view-card .card {
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 8px solid #1b6cced4;
+    background-color: var(--5-white);
+}
+
+.overviews-main-content .qualitys .over-view-card .card img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.overviews-main-content .qualitys .over-view-card .card h1 {
+    font-size: 4rem;
+    font-family: "Poppins-Regular";
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1b6cced4;
+}
+
+.overviews-main-content .qualitys .over-view-card .card p {
+    font-size: 1.5rem;
+    font-family: "Montserrat-Bold";
+    font-weight: normal;
+    text-transform: capitalize;
+    color: var(--simple-color);
+}
+
+/*------------------------ overview end ------------------------*/
+/*------------------------ contact page  ------------------------*/
+.contact-card {
+    padding: 50px;
+    font-family: "Poppins-Regular";
+}
+
+.contact-card .card-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-card .card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 70px;
+    background-color: var(--h1-color);
+}
+
+/*------------------------ contact page end ------------------------*/
+/*------------------------ services page  ------------------------*/
+.ser-card-boundle-min {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ser-card-boundle-min .card-services {
+    margin: 20px auto;
+    width: 28%;
+    box-shadow: 3px 4px 10px rgba(51, 51, 51, 0.322);
+}
+
+.ser-card-boundle-min .card-services .card {
+    padding: 10px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.ser-card-boundle-min .card-services .card:hover {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+}
+
+.ser-card-boundle-min .card-services .card img {
+    height: 30vh;
+    width: 50%;
+    margin: 20px auto;
+
+}
+
+/*------------------------ services page end ------------------------*/
