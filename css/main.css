@@ -643,10 +643,6 @@ body {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     background-color: var(--white-primary);
-    background-image: url(../image/card-bg-2.png);
-    background-blend-mode: hue;
-    background-position: center center;
-    background-size: cover;
 }
 
 .content-image,
@@ -702,10 +698,6 @@ body {
 .services-content .card-boundle-min .card-services .card {
     background-color: var(--5-white);
     margin-bottom: 20px;
-    background-image: url(../image/card-bg-3.png);
-    background-blend-mode: color-dodge;
-    background-position: center center;
-    background-size: cover;
 }
 
 .services-content .card-boundle-min .card-services .card:hover .card-img-top {
@@ -762,10 +754,6 @@ body {
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
-    background-image: url(../image/card-bg-1.png);
-    background-blend-mode: hue;
-    background-position: center center;
-    background-size: cover;
 }
 
 .container-qualitys .qualitys .qualitys-card-main .card:hover {
